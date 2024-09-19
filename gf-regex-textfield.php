@@ -3,12 +3,13 @@
  * Plugin Name:         Regex Textfield: Gravityforms Add-on
  * Plugin URI:          https://github.com/peshmerge/regex-textfield-gravityforms-add-on
  * Description:         A simple Gravity Form add-on to enable WordPress users to use Regex strings on textfield input.
- * Version:             1.1
+ * Version:             1.2
  * Requires at least:   5.3
  * Requires PHP:        7.4
  * Author:              Peshmerge Morad
  * Author URI:          https://peshmerge.io
- * Text Domain:         gravity-forms-regex-textfield
+ * Text Domain:         regex-textfield-gravityforms-add-on
+ * License:             GPLv3 or later
  * License URI:         https://www.gnu.org/licenses/gpl-3.0.html
  */
 
@@ -17,7 +18,7 @@ if (!defined('ABSPATH')) {
 }
 
 
-const GF_Regex_Textfield_VERSION = '1.1';
+const GF_Regex_Textfield_VERSION = '1.2';
 add_action('gform_loaded', ['GF_Regex_Textfield_Bootstrap', 'load'], 5);
 
 /**

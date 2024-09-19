@@ -18,16 +18,16 @@ class GF_Regex_Textfield extends GF_Field_Text
      * @since 3.9.1
      *
      */
-    public function get_form_editor_field_icon():string
+    public function get_form_editor_field_icon(): string
     {
         return gf_regex_textfield()->get_base_url() . '/img/gf_regex_textfield_icon.svg';
     }
 
-    public function get_form_editor_field_title():string
+    public function get_form_editor_field_title(): string
     {
         return esc_attr__(
             'Regex Textfield',
-            GFRegexTextfield::GF_Regex_Textfield_TEXTDOMAIN
+            'regex-textfield-gravityforms-add-on'
         );
     }
 
@@ -42,7 +42,7 @@ class GF_Regex_Textfield extends GF_Field_Text
     {
         return esc_attr__(
             'Allows users to add a text field which supports Regular expressions to restrict user input ',
-            GFRegexTextfield::GF_Regex_Textfield_TEXTDOMAIN
+            'regex-textfield-gravityforms-add-on'
         );
     }
 
@@ -51,7 +51,7 @@ class GF_Regex_Textfield extends GF_Field_Text
      *
      * @return array
      */
-    public function get_form_editor_button():array
+    public function get_form_editor_button(): array
     {
         return array(
             'group' => 'advanced_fields',
@@ -66,7 +66,7 @@ class GF_Regex_Textfield extends GF_Field_Text
      *
      * @return array
      */
-    function get_form_editor_field_settings():array
+    function get_form_editor_field_settings(): array
     {
         return array(
             'admin_label_setting',
@@ -86,14 +86,14 @@ class GF_Regex_Textfield extends GF_Field_Text
         );
     }
 
-    public function validate($value, $form):void
+    public function validate($value, $form): void
     {
         if (!empty($this->errorMessage)) {
             $this->validation_message = $this->errorMessage;
         } else {
             $this->validation_message = esc_attr__(
                 'Your input must comply with the defined regular expression',
-                GFRegexTextfield::GF_Regex_Textfield_TEXTDOMAIN
+                'regex-textfield-gravityforms-add-on'
             );
         }
 
@@ -106,7 +106,7 @@ class GF_Regex_Textfield extends GF_Field_Text
             $this->failed_validation = true;
             $this->validation_message = esc_attr__(
                 'Contact the website admins and notify them about unconfigured regex field',
-                GFRegexTextfield::GF_Regex_Textfield_TEXTDOMAIN
+                'regex-textfield-gravityforms-add-on'
             );
             return;
         }

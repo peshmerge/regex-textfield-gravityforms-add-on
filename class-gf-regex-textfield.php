@@ -8,8 +8,6 @@ GFForms::include_addon_framework();
 class GFRegexTextfield extends GFAddOn
 {
 
-    public const GF_Regex_Textfield_TEXTDOMAIN = 'gravity-forms-regex-textfield';
-
     /**
      * Class instance
      *
@@ -69,7 +67,7 @@ class GFRegexTextfield extends GFAddOn
             ?>
             <li class="regex_textfield_setting field_setting">
                 <label for="field_regex_textfield" class="section_label">
-                    <?php esc_html_e('Regular Expression', self::GF_Regex_Textfield_TEXTDOMAIN); ?>
+                    <?php esc_html_e('Regular Expression', 'regex-textfield-gravityforms-add-on'); ?>
                     <?php gform_tooltip('field_regex_textfield'); ?>
                 </label>
                 <input type="text" id="field_regex_textfield"/>
@@ -85,12 +83,12 @@ class GFRegexTextfield extends GFAddOn
                 '<h6>' .
                 esc_html__(
                     'Regular Expression',
-                    self::GF_Regex_Textfield_TEXTDOMAIN
+                    'regex-textfield-gravityforms-add-on'
                 ) .
                 '</h6>' .
                 esc_html__(
-                    'Enter the regex string you want to be used for the current form',
-                    self::GF_Regex_Textfield_TEXTDOMAIN
+                    'Enter the regex string you want to be used for the current form. For example, ^[a-zA-Z0-9_]{3,20}$ (user_name123) ',
+                    'regex-textfield-gravityforms-add-on'
                 )
         ];
         return array_merge($tooltips, $regextextfield_tooltips);

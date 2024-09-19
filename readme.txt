@@ -4,8 +4,8 @@ Contributors: peshmerge
 Tags: gravityforms, gravity form, regex
 Donate link: https://buymeacoffee.com/peshmerge
 Requires at least: 5.5
-Tested up to: 6.5.4
-Stable tag: 1.1
+Tested up to: 6.6
+Stable tag: 1.2
 Requires PHP: 8.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -46,6 +46,12 @@ Simply deactivate and delete the plugin.
 5. Form preview with the Regex Textfield field where the field is set to be required, but no regex string is defined.
 
 == Changelog ==
+
+= 1.2 =
+* New:      Tested with WP 6.6.2.
+* New:      Added an example to the field tooltip.
+* New:      Run the Plugin check to make sure the plugin comply with the WordPress guidelines
+
 
 = 1.1 =
 * New:      Added support for placeholder to the field.

@@ -1,2 +1,13 @@
+### 1.2 | 2024-19-09
+- New:      Tested with WP 6.6.2.
+- New:      Added an example to the field tooltip.
+- New:      Run the Plugin check to make sure the plugin comply with the WordPress guidelines.
+
+
+### 1.1 | 2024-16-06
+- New:      Added support for placeholder to the field.
+- Fixed:    Corrected typos and did some minor code reformating
+
+
 ### 1.0 | 2022-11-09
 - First version of Regex Textfield: Gravityforms Add-on.
